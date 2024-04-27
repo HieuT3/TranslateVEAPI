@@ -3,4 +3,4 @@ fastapi==0.110.2
 numpy==1.26.4
 pandas==2.2.2
 pydantic==2.7.1
-torch==2.2.2+cu121
+torch==2.2.0
