@@ -5,13 +5,16 @@ import numpy as np
 from pydantic import BaseModel
 from azure.storage.blob import BlobServiceClient
 import os
+from dotenv import load_dotenv
 
 UNK_IDX = 2
 PAD_IDX = 3
 SOS_token = 0
 EOS_token = 1
 
-connection_str = os.environ.get('AZURE_CONNECTION_STRING')
+load_dotenv()
+
+connection_str = os.getenv('AZURE_CONNECTION_STRING')
 container_name = 'model'
 
 app = FastAPI()

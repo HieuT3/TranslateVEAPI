@@ -2,13 +2,16 @@ import pandas as pd
 import pickle
 import os
 from azure.storage.blob import BlobServiceClient
+from dotenv import load_dotenv
 
 UNK_IDX = 2
 PAD_IDX = 3
 SOS_token = 0
 EOS_token = 1
 
-connection_str = os.environ.get('AZURE_CONNECTION_STRING')
+load_dotenv()
+
+connection_str = os.getenv('AZURE_CONNECTION_STRING')
 container_name = 'dataset'
 blob_service_client = BlobServiceClient.from_connection_string(connection_str)
 
