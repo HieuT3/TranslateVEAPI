@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'translateVE'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1BEAC78E8E348B1924D42FA84CAC20A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9C1CD9C2E3547FC8B4EF3CE7161E7B4 }}
